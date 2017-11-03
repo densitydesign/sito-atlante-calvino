@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- costum css -->
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700" rel="stylesheet">
-    <link rel="stylesheet" href="./myStyle.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Atlante Calvino, letteratura e visualizzazione</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light text-center">
+        <span class="navbar-text w-100" style="color: black">Atlante Calvino, letteratura e visualizzazione</span>
+        <!-- <a class="navbar-brand" href="#">Atlante Calvino, letteratura e visualizzazione</a> -->
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,16 +28,17 @@
             </ul>
         </div> -->
     </nav>
-    <section id="intro-logo" class="container d-flex align-items-center">
-        <div class="row">
-            <div class="col-8 mx-auto">
-                <img class="img-fluid" src="./asd.svg" />
+    <section id="interactive-logo" class="container">
+        <div class="row d-flex align-items-center">
+            <div id="logo-box" class="col-12 col-sm-12 col-md-12 col-lg-10 mx-auto">
+                <!-- place logo here with D3 -->
             </div>
+            <span id="scroll-down"></span>
         </div>
     </section>
-    <section id="intro" class="container">
+    <section class="container">
         <div class="row">
-            <div id="descrizione" class="col-8 mx-auto fs-mb-126">
+            <div id="descrizione" class="col-12 col-sm-12 col-md-10 col-lg-8 mx-auto fs-mb-126">
                 <h5 class="uppercase">Descrizione del progetto</h5>
                 <h2>Uscire a vedere</h2>
                 <p>La letteratura come l’ha pensata, praticata e modellata Italo Calvino tra gli anni Quaranta e gli anni Ottanta del secolo scorso, aveva un solo fine: tenere la mente aperta.</p>
@@ -47,7 +49,7 @@
                 <p>Per tre anni (2017-2020) il progetto metterà a contatto un’équipe letteraria dell’Unità d’italiano dell’Università di Ginevra e il DensityDesign del Politecnico di Milano, specializzato in progetti di Digital Humanities e data visualisation, con la collaborazione della casa editrice Mondadori, che detiene i diritti dell’intera opera di Italo Calvino.</p>
                 <p>Oggi Calvino avrebbe quasi cento anni. E di fronte alle profonde trasformazioni a cui la letteratura, la stampa, i mezzi di comunicazione e la ricerca stanno assistendo non sarebbe rimasto chiuso a difendere la cittadella umanistica assediata. Sarebbe uscito a vedere.</p>
             </div>
-            <div id="team" class="col-8 mx-auto fs-mb-126">
+            <div id="team" class="col-12 col-sm-12 col-md-10 col-lg-8 mx-auto fs-mb-126">
                 <h5 class="uppercase">Team</h5>
                 <h2>Composizione del gruppo di ricerca</h2>
                 <p>Gruppo di ricerca UNIGE + POLIMI. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -73,42 +75,47 @@
                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
             </div>
         </div>
-        <div id="loghi" class="row fs-mb-126">
-            <div class="col-8 offset-2 mb-3">
+        <div id="loghi" class="row Xfs-mb-126 mb-5">
+
+            <div class="col-12 offset-0 col-sm-12 offset-sm-1 col-lg-10 offset-lg-2 mb-3">
                 <h5 class="uppercase">Istituzioni coinvolte</h5>
             </div>
-            <div class="col-3 offset-2">
-                <img width="63%" src="./assets/logo-unige.svg">
+            <div class="col-10 mb-4 mb-sm-0 col-sm-4 offset-sm-1 col-lg-3 offset-lg-2">
+                <img id="logo-unige" Xwidth="63%" src="./assets/logo-unige.svg">
             </div>
-            <div class="col-3">
-                <img width="63%" src="./assets/logo-polimi.svg">
+            <div class="col-10 mb-4 mb-sm-0 col-sm-4 col-lg-3">
+                <img id="logo-polimi" Xwidth="63%" src="./assets/logo-polimi.svg">
             </div>
-            <div class="col-2">
-                <img width="46%" src="./assets/logo-dd.svg">
+            <div class="col-10 ml-1 mb-4 mb-sm-0 col-sm-2 col-lg-2">
+                <img id="logo-dd" Xwidth="46%" src="./assets/logo-dd.svg">
             </div>
-            <div class="col-8 offset-2 mb-3 fs-mt-56">
+
+            <div class="col-12 offset-sm-1 mb-3 col-lg-10 offset-lg-2 fs-mt-56">
                 <h5 class="uppercase">Con il supporto di</h5>
             </div>
-            <div class="col-3 offset-2">
+            <div class="col-10 mb-5 mb-sm-0 col-sm-4 offset-sm-1 col-lg-3 offset-lg-2">
                 <img width="100%" src="./assets/logo-mondadori.svg">
             </div>
-            <div class="col-3 offset-1">
+            <div class="col-10 mb-5 mb-sm-0 col-sm-4 offset-sm-1 col-lg-3">
                 <img width="100%" src="./assets/logo-fnsnf.svg">
             </div>
         </div>
     </section>
     <footer class="container-fluid text-center">
-      <div class="row">
-        <div class="col-12">
-          <p class="my-2">© 2017 – Atlante Calvino, letteratura e visualizzazione</p>
+        <div class="row">
+            <div class="col-12">
+                <p class="my-2">© 2017 – Atlante Calvino, letteratura e visualizzazione</p>
+            </div>
         </div>
-      </div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.min.js "></script>
+    <script src="https://unpkg.com/svg-points@6.0.0/dist/svg-points.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

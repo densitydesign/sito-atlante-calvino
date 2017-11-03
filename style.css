@@ -1,0 +1,154 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    padding-top: 0px;
+}
+
+body.navbar-displayed {
+    padding-top: 0px;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 0.75rem;
+}
+
+h5.uppercase {
+    text-transform: uppercase;
+}
+
+.fs-mb-126 {
+    margin-bottom: 6.3rem;
+}
+
+.fs-mt-56 {
+    margin-top: 2.8rem;
+}
+
+
+/* NAVBAR */
+
+body>.navbar {
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, .7);
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+body.navbar-displayed>.navbar {
+    opacity: 1;
+}
+
+
+/* CALOGO */
+
+#interactive-logo {
+    /*background-color: #fafafa;*/
+}
+
+#interactive-logo>.row {
+    height: 100vh;
+}
+
+#logo-box {}
+
+#calogo {
+    width: 100%;
+    height: auto;
+}
+
+#calogo polygon {
+    display: none;
+    fill: #fafafa;
+}
+
+#calogo .node {
+    fill: #fff;
+    transition: fill 0.2s linear;
+}
+
+#calogo .node.is-inside {
+    fill: black;
+}
+
+#calogo .root-node,
+#calogo .root-node.is-inside {
+    fill: black;
+    /*display: none;*/
+}
+
+#scroll-down {
+	cursor: pointer;
+	display: block;
+	/*background-color: red;*/
+	position: absolute;
+	bottom: 5rem;
+	left: calc(50% - 2rem);
+	height: 1.5rem;
+	width: 4rem;
+}
+
+#scroll-down::before, #scroll-down::after {
+	content: ' ';
+	background-color: black;
+	width: 2.35rem;
+	height: 2px;
+	display: block;
+	position: absolute;
+	bottom: 0.7rem;
+}
+
+#scroll-down::before {
+	transform: rotate(30deg);
+	/*left: calc(50% - 0.86rem);*/
+}
+#scroll-down::after {
+	transform: rotate(-30deg);
+	/*left: calc(50% + 0.86rem);*/
+	left: 50%;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+#loghi {
+    overflow-y: hidden;
+}
+
+#logo-unige {
+    width: 100%;
+}
+
+#logo-polimi {
+    width: 82%;
+}
+
+#logo-dd {
+    width: 30%;
+}
+
+@media (min-width: 576px) {
+    #logo-unige {
+        width: 63%;
+    }
+
+    #logo-polimi {
+        width: 63%;
+    }
+
+    #logo-dd {
+        width: 46%;
+    }
+}
