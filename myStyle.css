@@ -1,0 +1,42 @@
+html {
+	font-size: 20px;
+}
+
+body {
+	font-family: 'Crimson Text', serif;
+}
+
+h2 {
+	font-size: 1.75rem;
+}
+
+h5 {
+	font-size: 0.75rem;
+}
+
+h5.uppercase {
+	text-transform: uppercase;
+}
+
+footer {
+	background-color: black;
+	color: white;
+}
+
+body > .navbar {
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
+}
+
+.fs-mb-126 {
+	margin-bottom: 6.3rem;
+}
+.fs-mt-56 {
+	margin-top: 2.8rem;
+}
+
+#intro-logo {
+	/*height: calc(50vh - 70px);*/
+	padding: 10.5rem 0;
+	background-color: #fafafa;
+}
