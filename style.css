@@ -86,7 +86,7 @@ body.navbar-displayed>.navbar {
 
 #scroll-down {
 	cursor: pointer;
-	display: block;
+	display: none;
 	/*background-color: red;*/
 	position: absolute;
 	bottom: 5rem;
@@ -100,7 +100,7 @@ body.navbar-displayed>.navbar {
 	background-color: black;
 	width: 2.35rem;
 	height: 2px;
-	display: block;
+	display: none;
 	position: absolute;
 	bottom: 0.7rem;
 }
