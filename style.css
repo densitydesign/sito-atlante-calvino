@@ -1,10 +1,10 @@
 html {
-    font-size: 20px;
+    font-size: 18px;
+    background-color: darkslategrey;
 }
 
 body {
     font-family: 'Crimson Text', serif;
-    padding-top: 0px;
 }
 
 body.navbar-displayed {
@@ -12,7 +12,12 @@ body.navbar-displayed {
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    color: darkslategrey;
+}
+
+h3 {
+    font-size: 1.35rem;
 }
 
 h5 {
@@ -21,6 +26,9 @@ h5 {
 
 h5.uppercase {
     text-transform: uppercase;
+    letter-spacing: .65px;
+    font-weight: 600;
+    color: darkslategrey;
 }
 
 .fs-mb-126 {
@@ -31,20 +39,46 @@ h5.uppercase {
     margin-top: 2.8rem;
 }
 
+a {
+    color: darkslategrey;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: darkslategrey;
+    opacity: .8;
+}
+
+
+
+
+
+
 
 /* NAVBAR */
 
 body>.navbar {
-    border-bottom: 1px solid black;
+    border-bottom: .75rem solid tomato;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, .7);
-    opacity: 0;
-    transition: opacity .5s ease;
+    background-color: rgba(255, 255, 255, .0);
+    transition: top .5s ease-in-out;
+    top: -3.5rem;
+    padding: .66rem 0.5rem;
 }
 
 body.navbar-displayed>.navbar {
-    opacity: 1;
+    top: 0;
+    background-color: rgba(255, 255, 255, .7);
 }
+
+body>.navbar p {
+    font-size: 0.85rem;
+}
+
+
+
+
+
 
 
 /* CALOGO */
@@ -70,56 +104,47 @@ body.navbar-displayed>.navbar {
 }
 
 #calogo .node {
-    fill: #fff;
-    transition: fill 0.2s linear;
+    fill: rgba(255, 255, 255, 0);
+    transition: fill .3s linear;
+    /*mix-blend-mode: multiply;*/
 }
 
 #calogo .node.is-inside {
-    fill: black;
+    fill: tomato;
 }
 
 #calogo .root-node,
 #calogo .root-node.is-inside {
-    fill: black;
-    /*display: none;*/
+    fill: darkslategrey;
 }
 
 #scroll-down {
-	cursor: pointer;
-	display: none;
-	/*background-color: red;*/
-	position: absolute;
-	bottom: 5rem;
-	left: calc(50% - 2rem);
-	height: 1.5rem;
-	width: 4rem;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    bottom: 3rem;
+    left: calc(50% - 2rem);
+    height: 3rem;
+    width: 4rem;
+    opacity: 1;
+    transition: padding 0.5s ease, opacity .5s ease;
 }
 
-#scroll-down::before, #scroll-down::after {
-	content: ' ';
-	background-color: black;
-	width: 2.35rem;
-	height: 2px;
-	display: none;
-	position: absolute;
-	bottom: 0.7rem;
+body.navbar-displayed #scroll-down {
+    opacity: 0;
 }
 
-#scroll-down::before {
-	transform: rotate(30deg);
-	/*left: calc(50% - 0.86rem);*/
+#scroll-down:hover {
+    padding: 0.75rem 0 0 0;
 }
-#scroll-down::after {
-	transform: rotate(-30deg);
-	/*left: calc(50% + 0.86rem);*/
-	left: 50%;
-}
+
+
 
 
 /* FOOTER */
 
 footer {
-    background-color: black;
+    background-color: tomato;
     color: white;
 }
 
@@ -140,6 +165,25 @@ footer {
 }
 
 @media (min-width: 576px) {
+    html {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 1.75rem;
+        color: darkslategrey;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 0.75rem;
+    }
+    body>.navbar {
+        padding: .5rem 1rem;
+    }
+    body>.navbar p {
+        font-size: 1rem;
+    }
     #logo-unige {
         width: 63%;
     }
