@@ -61,6 +61,7 @@ body>.navbar {
     border-bottom: .75rem solid tomato;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, .0);
+    /*border-color: grey;*/
     transition: top .5s ease-in-out;
     top: -3.5rem;
     padding: .66rem 0.5rem;
@@ -69,6 +70,7 @@ body>.navbar {
 body.navbar-displayed>.navbar {
     top: 0;
     background-color: rgba(255, 255, 255, .7);
+    /*border-color: grey;*/
 }
 
 body>.navbar p {
@@ -111,11 +113,13 @@ body>.navbar p {
 
 #calogo .node.is-inside {
     fill: tomato;
+    /*fill: DODGERBLUE;*/
 }
 
 #calogo .root-node,
 #calogo .root-node.is-inside {
     fill: darkslategrey;
+
 }
 
 #scroll-down {
