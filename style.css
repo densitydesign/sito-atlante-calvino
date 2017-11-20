@@ -20,6 +20,10 @@ h3 {
     font-size: 1.35rem;
 }
 
+h4 {
+    font-size: 1.05rem;
+}
+
 h5 {
     font-size: 0.75rem;
 }
@@ -35,8 +39,20 @@ h5.uppercase {
     margin-bottom: 6.3rem;
 }
 
+.fs-mt-126 {
+    margin-top: 6.3rem;
+}
+
+.fs-pt-126 {
+    padding-top: 6.3rem;
+}
+
 .fs-mt-56 {
     margin-top: 2.8rem;
+}
+
+.fs-mb-56 {
+    margin-bottom: 2.8rem;
 }
 
 a {
@@ -69,7 +85,7 @@ body>.navbar {
 
 body.navbar-displayed>.navbar {
     top: 0;
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .85);
     /*border-color: grey;*/
 }
 

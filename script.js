@@ -248,5 +248,5 @@ d3.select('#scroll-down').on('click', function() {
     d3.transition()
         .duration(1000)
         .ease(d3.easePolyInOut)
-        .tween("scroll", scrollTween(window.innerHeight * .25));
+        .tween("scroll", scrollTween(window.innerHeight * .40));
 })
