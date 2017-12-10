@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="it">
+
+    <head>
+        <title>Atlante Italo Calvino</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+        <!-- costum css -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700" rel="stylesheet"> -->
+        <!-- <link rel="stylesheet" href="./style.css"> -->
+        <style>
+            #logo-box {
+                /*border: 1px solid tomato;*/
+            }
+            polygon {
+                display: none;
+            }
+            .node {
+                fill: #fff;
+                opacity: 1;
+                transition: fill .5s ease;
+            }
+            .node.is-inside {
+                fill: tomato;
+                opacity: 1;
+            }
+            .node.root-node {
+                fill: darkslategrey;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="logo-box" class="">
+            <!-- place logo here with D3 -->
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./assets/jquery-3.2.1.slim.min.js"></script>
+        <script src="./assets/popper.min.js"></script>
+        <script src="./assets/bootstrap.min.js"></script>
+        <script src="./assets/d3.v4.min.js"></script>
+        <script src="./assets/svg-points.min.js"></script>
+        <script src="./assets/FileSaver.min.js"></script>
+        <script src="./logo.js"></script>
+    </body>
+
+</html>
