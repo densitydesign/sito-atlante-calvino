@@ -1,4 +1,4 @@
-let svgUrl = "./assets/logo-small-polygons-01.svg";
+let svgUrl = "./assets/logo-big-polygons-01.svg";
 
 d3.xml(svgUrl)
     .mimeType("image/svg+xml")
