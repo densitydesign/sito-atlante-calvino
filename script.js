@@ -5,15 +5,15 @@ function scrollTween(offset) {
     };
 }
 
-// d3.select(window).on('scroll', function() {
-//     if (window.pageYOffset >= window.innerHeight * .20) {
-//         d3.select('body').classed('navbar-displayed', true);
-//     } else {
-//         d3.select('body').classed('navbar-displayed', false);
-//     }
-// })
+d3.select(window).on('scroll', function() {
+    if (window.pageYOffset >= window.innerHeight * .20) {
+        d3.select('body').classed('navbar-displayed', true);
+    } else {
+        d3.select('body').classed('navbar-displayed', false);
+    }
+})
 
-d3.select('body').classed('navbar-displayed', true);
+// d3.select('body').classed('navbar-displayed', true);
 
 d3.select('#scroll-down').on('click', function() {
     d3.transition()
