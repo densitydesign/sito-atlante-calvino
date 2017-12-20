@@ -3,6 +3,16 @@ html {
     background-color: darkslategrey;
 }
 
+html:lang(it-IT) :not(:lang(it-IT)) {
+  display: none;
+}
+html:lang(fr-FR) :not(:lang(fr-FR)) {
+  display: none;
+}
+html:lang(en-UK) :not(:lang(en-UK)) {
+  display: none;
+}
+
 body {
     font-family: 'Crimson Text', serif;
 }
@@ -91,11 +101,13 @@ body>.navbar p {
 }
 
 .nav-link {
-    font-style: italic;
     letter-spacing: 0.5px;
-    text-transform: lowercase;
+    text-transform: capitalize;
 }
 
+.switch-language {
+    cursor: pointer;
+}
 
 
 
