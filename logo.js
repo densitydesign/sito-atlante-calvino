@@ -13,9 +13,9 @@ d3.xml(svgUrl)
             .style('opacity', 0)
             .style('letter-spacing', '-0.5px')
             .html(`
-                <span lang="it-IT">Letteartura e visualizzazione</span>
+                <span lang="it-IT">Letteratura e visualizzazione</span>
                 <span lang="fr-FR">Littérature et visualisation</span>
-                <span lang="en-UK">Letteratura e visualizzazione</span>
+                <span lang="en-UK">Literature and Visualisation</span>
                 `)
 
         let calogo = d3.select("#calogo");
