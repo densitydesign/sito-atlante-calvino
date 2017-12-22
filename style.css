@@ -102,7 +102,7 @@ body>.navbar p {
 
 .nav-link {
     letter-spacing: 0.5px;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
 }
 
 .switch-language {
