@@ -15,7 +15,7 @@ d3.xml(svgUrl)
             .html(`
                 <span lang="it-IT">Letteratura e visualizzazione</span>
                 <span lang="fr-FR">Littérature et visualisation</span>
-                <span lang="en-UK">Literature and Visualisation</span>
+                <span lang="en-UK">Literature and Visualization</span>
                 `)
 
         let calogo = d3.select("#calogo");
